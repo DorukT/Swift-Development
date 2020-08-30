@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,82 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ISTEC_Showers_Eyebaths" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AjY-IG-hxv">
+                                <rect key="frame" x="87" y="97" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="5LI-xT-uoQ"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tvi-Z1-w78">
+                                <rect key="frame" x="87" y="337" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="0sn-1e-BfS"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GmM-2U-uv2">
+                                <rect key="frame" x="87" y="577" width="240" height="128"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Online Catalog" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5aD-4Z-wRl">
+                                <rect key="frame" x="103" y="473" width="209" height="96"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="96" id="hqi-Bn-cdH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="3D Shower Configurator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4MO-9z-1c0">
+                                <rect key="frame" x="103" y="233" width="209" height="96"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="96" id="eOX-AE-llI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Ask For A Quotation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4L0-Rq-q9D">
+                                <rect key="frame" x="103" y="713" width="209" height="96"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="96" id="caD-xe-OMV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="AjY-IG-hxv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="53" id="1Hq-Xb-9KO"/>
+                            <constraint firstItem="AjY-IG-hxv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="5WY-P7-0GH"/>
+                            <constraint firstItem="GmM-2U-uv2" firstAttribute="top" secondItem="5aD-4Z-wRl" secondAttribute="bottom" constant="8" id="86P-el-UWO"/>
+                            <constraint firstItem="4MO-9z-1c0" firstAttribute="leading" secondItem="5aD-4Z-wRl" secondAttribute="leading" id="90x-cm-WqF"/>
+                            <constraint firstItem="AjY-IG-hxv" firstAttribute="trailing" secondItem="tvi-Z1-w78" secondAttribute="trailing" id="DGm-j3-d4G"/>
+                            <constraint firstItem="tvi-Z1-w78" firstAttribute="trailing" secondItem="GmM-2U-uv2" secondAttribute="trailing" id="Faq-I7-DBi"/>
+                            <constraint firstItem="tvi-Z1-w78" firstAttribute="top" secondItem="4MO-9z-1c0" secondAttribute="bottom" constant="8" id="HJl-Hg-k5e"/>
+                            <constraint firstItem="AjY-IG-hxv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="He3-Wy-Tyc"/>
+                            <constraint firstItem="tvi-Z1-w78" firstAttribute="leading" secondItem="GmM-2U-uv2" secondAttribute="leading" id="JqW-W3-TvR"/>
+                            <constraint firstItem="AjY-IG-hxv" firstAttribute="leading" secondItem="tvi-Z1-w78" secondAttribute="leading" id="Mon-Yw-LY8"/>
+                            <constraint firstItem="4L0-Rq-q9D" firstAttribute="top" secondItem="GmM-2U-uv2" secondAttribute="bottom" constant="8" id="UdY-kB-tTb"/>
+                            <constraint firstItem="4MO-9z-1c0" firstAttribute="top" secondItem="AjY-IG-hxv" secondAttribute="bottom" constant="8" id="Yzd-k1-mi4"/>
+                            <constraint firstItem="4MO-9z-1c0" firstAttribute="trailing" secondItem="5aD-4Z-wRl" secondAttribute="trailing" id="a4n-ta-GR3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4L0-Rq-q9D" secondAttribute="bottom" constant="53" id="eZf-PZ-ZXh"/>
+                            <constraint firstItem="AjY-IG-hxv" firstAttribute="centerX" secondItem="4MO-9z-1c0" secondAttribute="centerX" id="mCs-Hb-hhc"/>
+                            <constraint firstItem="5aD-4Z-wRl" firstAttribute="top" secondItem="tvi-Z1-w78" secondAttribute="bottom" constant="8" id="mhe-CN-Yrd"/>
+                            <constraint firstItem="4MO-9z-1c0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="103" id="rHl-Sg-KbI"/>
+                            <constraint firstItem="5aD-4Z-wRl" firstAttribute="leading" secondItem="4L0-Rq-q9D" secondAttribute="leading" id="wKu-N7-efh"/>
+                            <constraint firstItem="5aD-4Z-wRl" firstAttribute="trailing" secondItem="4L0-Rq-q9D" secondAttribute="trailing" id="zcd-b6-1Zu"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
         </scene>
     </scenes>
 </document>
