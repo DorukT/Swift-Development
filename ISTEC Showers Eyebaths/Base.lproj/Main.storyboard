@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rcC-nm-76N">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -7,100 +7,202 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--mainpage-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ISTEC_Showers_Eyebaths" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="mainpage" id="BYZ-38-t0r" customClass="ViewController" customModule="ISTEC_Showers_Eyebaths" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tvi-Z1-w78">
-                                <rect key="frame" x="87" y="337" width="240" height="128"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tvi-Z1-w78">
+                                <rect key="frame" x="87" y="381" width="240" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="0sn-1e-BfS"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GmM-2U-uv2">
-                                <rect key="frame" x="87" y="577" width="240" height="128"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GmM-2U-uv2">
+                                <rect key="frame" x="87" y="621" width="240" height="84"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Ask For A Quotation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4L0-Rq-q9D">
-                                <rect key="frame" x="103" y="713" width="209" height="96"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="96" id="caD-xe-OMV"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Online Catalog" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5aD-4Z-wRl">
-                                <rect key="frame" x="103" y="473" width="209" height="96"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="96" id="hqi-Bn-cdH"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="3D Shower Configurator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4MO-9z-1c0">
-                                <rect key="frame" x="103" y="233" width="209" height="96"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="96" id="eOX-AE-llI"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AjY-IG-hxv">
-                                <rect key="frame" x="87" y="97" width="240" height="128"/>
+                                <rect key="frame" x="87" y="141" width="240" height="128"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="5LI-xT-uoQ"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rDI-Cq-2PY">
+                                <rect key="frame" x="87" y="517" width="240" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Online Catalog"/>
+                                <connections>
+                                    <action selector="catalogAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cSr-80-ed0"/>
+                                    <segue destination="fFv-LD-2r7" kind="show" identifier="page2" id="Yal-PY-Mkf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bpv-cs-njH">
+                                <rect key="frame" x="87" y="713" width="240" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Ask For A Quotation"/>
+                                <connections>
+                                    <action selector="contactAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3WI-PS-gEl"/>
+                                    <segue destination="dik-Uw-Zjw" kind="show" identifier="page3" id="ucV-lP-ijv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R2C-tB-odM">
+                                <rect key="frame" x="87" y="277" width="240" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="3D Shower Configurator"/>
+                                <connections>
+                                    <action selector="configuratorAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mZy-VV-uF6"/>
+                                    <segue destination="AOd-qj-DRf" kind="show" identifier="page1" id="xIn-cf-24Y"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="AjY-IG-hxv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="53" id="1Hq-Xb-9KO"/>
                             <constraint firstItem="AjY-IG-hxv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="5WY-P7-0GH"/>
-                            <constraint firstItem="GmM-2U-uv2" firstAttribute="top" secondItem="5aD-4Z-wRl" secondAttribute="bottom" constant="8" id="86P-el-UWO"/>
-                            <constraint firstItem="4MO-9z-1c0" firstAttribute="leading" secondItem="5aD-4Z-wRl" secondAttribute="leading" id="90x-cm-WqF"/>
                             <constraint firstItem="AjY-IG-hxv" firstAttribute="trailing" secondItem="tvi-Z1-w78" secondAttribute="trailing" id="DGm-j3-d4G"/>
                             <constraint firstItem="tvi-Z1-w78" firstAttribute="trailing" secondItem="GmM-2U-uv2" secondAttribute="trailing" id="Faq-I7-DBi"/>
-                            <constraint firstItem="tvi-Z1-w78" firstAttribute="top" secondItem="4MO-9z-1c0" secondAttribute="bottom" constant="8" id="HJl-Hg-k5e"/>
                             <constraint firstItem="AjY-IG-hxv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="He3-Wy-Tyc"/>
                             <constraint firstItem="tvi-Z1-w78" firstAttribute="leading" secondItem="GmM-2U-uv2" secondAttribute="leading" id="JqW-W3-TvR"/>
                             <constraint firstItem="AjY-IG-hxv" firstAttribute="leading" secondItem="tvi-Z1-w78" secondAttribute="leading" id="Mon-Yw-LY8"/>
-                            <constraint firstItem="4L0-Rq-q9D" firstAttribute="top" secondItem="GmM-2U-uv2" secondAttribute="bottom" constant="8" id="UdY-kB-tTb"/>
-                            <constraint firstItem="4MO-9z-1c0" firstAttribute="top" secondItem="AjY-IG-hxv" secondAttribute="bottom" constant="8" id="Yzd-k1-mi4"/>
-                            <constraint firstItem="4MO-9z-1c0" firstAttribute="trailing" secondItem="5aD-4Z-wRl" secondAttribute="trailing" id="a4n-ta-GR3"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4L0-Rq-q9D" secondAttribute="bottom" constant="53" id="eZf-PZ-ZXh"/>
-                            <constraint firstItem="AjY-IG-hxv" firstAttribute="centerX" secondItem="4MO-9z-1c0" secondAttribute="centerX" id="mCs-Hb-hhc"/>
-                            <constraint firstItem="5aD-4Z-wRl" firstAttribute="top" secondItem="tvi-Z1-w78" secondAttribute="bottom" constant="8" id="mhe-CN-Yrd"/>
-                            <constraint firstItem="4MO-9z-1c0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="103" id="rHl-Sg-KbI"/>
-                            <constraint firstItem="5aD-4Z-wRl" firstAttribute="leading" secondItem="4L0-Rq-q9D" secondAttribute="leading" id="wKu-N7-efh"/>
-                            <constraint firstItem="5aD-4Z-wRl" firstAttribute="trailing" secondItem="4L0-Rq-q9D" secondAttribute="trailing" id="zcd-b6-1Zu"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="8Wj-Lr-rfI"/>
+                    <connections>
+                        <outlet property="catalogImage" destination="tvi-Z1-w78" id="iMi-mD-O0X"/>
+                        <outlet property="configuratorImage" destination="AjY-IG-hxv" id="6oK-RT-0Us"/>
+                        <outlet property="contactImage" destination="GmM-2U-uv2" id="SNJ-us-im0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+            <point key="canvasLocation" x="252" y="277"/>
         </scene>
-        <!--View Controller-->
+        <!--controller1-->
+        <scene sceneID="UCh-QZ-q4N">
+            <objects>
+                <viewController title="controller1" id="AOd-qj-DRf" customClass="ViewController2" customModule="ISTEC_Showers_Eyebaths" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6WY-qz-jZp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a9e-kU-Ull">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="a9e-kU-Ull" firstAttribute="bottom" secondItem="5lv-ZK-wYE" secondAttribute="bottom" id="ELB-a0-5UK"/>
+                            <constraint firstItem="a9e-kU-Ull" firstAttribute="leading" secondItem="5lv-ZK-wYE" secondAttribute="leading" id="G3R-qs-WsL"/>
+                            <constraint firstItem="a9e-kU-Ull" firstAttribute="centerX" secondItem="6WY-qz-jZp" secondAttribute="centerX" id="Zii-8f-Blv"/>
+                            <constraint firstItem="a9e-kU-Ull" firstAttribute="top" secondItem="5lv-ZK-wYE" secondAttribute="top" id="guq-Ca-VV0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5lv-ZK-wYE"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="bKM-ck-y1a"/>
+                    <connections>
+                        <outlet property="webview1" destination="a9e-kU-Ull" id="sZW-Cd-acu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MOj-gF-vNt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1031.8840579710145" y="-378.34821428571428"/>
+        </scene>
+        <!--controller2-->
         <scene sceneID="1hb-01-Tbo">
             <objects>
-                <viewController id="fFv-LD-2r7" sceneMemberID="viewController">
+                <viewController title="controller2" id="fFv-LD-2r7" customClass="ViewController3" customModule="ISTEC_Showers_Eyebaths" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Rqt-mI-wFl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pnr-qI-rgf">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Pnr-qI-rgf" firstAttribute="leading" secondItem="7md-bv-6Hj" secondAttribute="leading" id="IJj-dC-UhQ"/>
+                            <constraint firstItem="Pnr-qI-rgf" firstAttribute="top" secondItem="7md-bv-6Hj" secondAttribute="top" id="K9t-gw-Vcb"/>
+                            <constraint firstItem="Pnr-qI-rgf" firstAttribute="bottom" secondItem="7md-bv-6Hj" secondAttribute="bottom" id="cSV-pI-6Jo"/>
+                            <constraint firstItem="Pnr-qI-rgf" firstAttribute="centerX" secondItem="Rqt-mI-wFl" secondAttribute="centerX" id="w2O-bA-OJI"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="7md-bv-6Hj"/>
                     </view>
+                    <navigationItem key="navigationItem" id="wND-Wb-HGO"/>
+                    <connections>
+                        <outlet property="webview2" destination="Pnr-qI-rgf" id="Ry3-Kp-LWi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wKa-Ck-5B1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="904" y="138"/>
+            <point key="canvasLocation" x="1031.8840579710145" y="276.5625"/>
+        </scene>
+        <!--controller3-->
+        <scene sceneID="XyC-Fp-SXA">
+            <objects>
+                <viewController title="controller3" id="dik-Uw-Zjw" customClass="ViewController4" customModule="ISTEC_Showers_Eyebaths" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HQU-TT-pOr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WB3-15-XyM">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="WB3-15-XyM" firstAttribute="centerX" secondItem="HQU-TT-pOr" secondAttribute="centerX" id="IJk-q9-AxJ"/>
+                            <constraint firstItem="WB3-15-XyM" firstAttribute="top" secondItem="679-5M-OsF" secondAttribute="top" id="UeH-d0-Fyc"/>
+                            <constraint firstItem="WB3-15-XyM" firstAttribute="leading" secondItem="679-5M-OsF" secondAttribute="leading" id="efZ-bE-S9I"/>
+                            <constraint firstItem="WB3-15-XyM" firstAttribute="bottom" secondItem="679-5M-OsF" secondAttribute="bottom" id="yES-m4-9bJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="679-5M-OsF"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="6A5-Od-uAR"/>
+                    <connections>
+                        <outlet property="webview3" destination="WB3-15-XyM" id="ZTi-j8-l41"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CrV-GI-HIu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1040.5797101449275" y="925.44642857142856"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="hZM-zn-Dqe">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rcC-nm-76N" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qT2-UF-rlR">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Mu0-FZ-M4w"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rKZ-Bs-A2X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-465" y="277"/>
         </scene>
     </scenes>
 </document>
