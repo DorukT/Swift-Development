@@ -15,58 +15,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tvi-Z1-w78">
-                                <rect key="frame" x="87" y="381" width="240" height="128"/>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="katalog" translatesAutoresizingMaskIntoConstraints="NO" id="tvi-Z1-w78">
+                                <rect key="frame" x="87" y="381" width="240" height="223"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                </accessibility>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="0sn-1e-BfS"/>
+                                    <constraint firstAttribute="height" constant="223" id="XEy-Qr-efy"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GmM-2U-uv2">
-                                <rect key="frame" x="87" y="621" width="240" height="84"/>
-                            </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="AjY-IG-hxv">
-                                <rect key="frame" x="87" y="141" width="240" height="128"/>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="3D" translatesAutoresizingMaskIntoConstraints="NO" id="AjY-IG-hxv">
+                                <rect key="frame" x="63" y="127" width="289" height="214"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                    <bool key="isElement" value="NO"/>
+                                </accessibility>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="5LI-xT-uoQ"/>
+                                    <constraint firstAttribute="height" constant="214" id="ujD-HJ-yhH"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rDI-Cq-2PY">
-                                <rect key="frame" x="87" y="517" width="240" height="76"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Online Catalog"/>
-                                <connections>
-                                    <action selector="catalogAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cSr-80-ed0"/>
-                                    <segue destination="fFv-LD-2r7" kind="show" identifier="page2" id="Yal-PY-Mkf"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bpv-cs-njH">
-                                <rect key="frame" x="87" y="713" width="240" height="76"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Ask For A Quotation"/>
-                                <connections>
-                                    <action selector="contactAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3WI-PS-gEl"/>
-                                    <segue destination="dik-Uw-Zjw" kind="show" identifier="page3" id="ucV-lP-ijv"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R2C-tB-odM">
-                                <rect key="frame" x="87" y="277" width="240" height="76"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="3D Shower Configurator"/>
-                                <connections>
-                                    <action selector="configuratorAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mZy-VV-uF6"/>
-                                    <segue destination="AOd-qj-DRf" kind="show" identifier="page1" id="xIn-cf-24Y"/>
-                                </connections>
-                            </button>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Contact" translatesAutoresizingMaskIntoConstraints="NO" id="GmM-2U-uv2">
+                                <rect key="frame" x="-12" y="612" width="426" height="230"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                </accessibility>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="AjY-IG-hxv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="53" id="1Hq-Xb-9KO"/>
-                            <constraint firstItem="AjY-IG-hxv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="5WY-P7-0GH"/>
-                            <constraint firstItem="AjY-IG-hxv" firstAttribute="trailing" secondItem="tvi-Z1-w78" secondAttribute="trailing" id="DGm-j3-d4G"/>
-                            <constraint firstItem="tvi-Z1-w78" firstAttribute="trailing" secondItem="GmM-2U-uv2" secondAttribute="trailing" id="Faq-I7-DBi"/>
-                            <constraint firstItem="AjY-IG-hxv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="He3-Wy-Tyc"/>
-                            <constraint firstItem="tvi-Z1-w78" firstAttribute="leading" secondItem="GmM-2U-uv2" secondAttribute="leading" id="JqW-W3-TvR"/>
-                            <constraint firstItem="AjY-IG-hxv" firstAttribute="leading" secondItem="tvi-Z1-w78" secondAttribute="leading" id="Mon-Yw-LY8"/>
+                            <constraint firstItem="GmM-2U-uv2" firstAttribute="top" secondItem="tvi-Z1-w78" secondAttribute="bottom" constant="8" id="1B8-Tg-o0f"/>
+                            <constraint firstItem="AjY-IG-hxv" firstAttribute="centerX" secondItem="tvi-Z1-w78" secondAttribute="centerX" id="1fI-mp-6Uj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="GmM-2U-uv2" secondAttribute="bottom" constant="20" id="8Yw-XF-Zbk"/>
+                            <constraint firstItem="AjY-IG-hxv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="39" id="KEm-HV-L33"/>
+                            <constraint firstItem="AjY-IG-hxv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="63" id="Uuo-LL-iAB"/>
+                            <constraint firstItem="GmM-2U-uv2" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="V1z-7X-xe4"/>
+                            <constraint firstItem="tvi-Z1-w78" firstAttribute="top" secondItem="AjY-IG-hxv" secondAttribute="bottom" constant="40" id="bps-xM-7Kn"/>
+                            <constraint firstItem="tvi-Z1-w78" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="eFw-DR-cvd"/>
+                            <constraint firstItem="AjY-IG-hxv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="el7-xx-qwr"/>
+                            <constraint firstItem="GmM-2U-uv2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-32" id="o71-zA-IZu"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -75,11 +61,14 @@
                         <outlet property="catalogImage" destination="tvi-Z1-w78" id="iMi-mD-O0X"/>
                         <outlet property="configuratorImage" destination="AjY-IG-hxv" id="6oK-RT-0Us"/>
                         <outlet property="contactImage" destination="GmM-2U-uv2" id="SNJ-us-im0"/>
+                        <segue destination="AOd-qj-DRf" kind="show" identifier="page1" id="iyd-fs-k5h"/>
+                        <segue destination="fFv-LD-2r7" kind="show" identifier="page2" id="ecH-zf-6Xh"/>
+                        <segue destination="dik-Uw-Zjw" kind="show" identifier="page3" id="OeW-7q-ikK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="252" y="277"/>
+            <point key="canvasLocation" x="250.72463768115944" y="276.5625"/>
         </scene>
         <!--controller1-->
         <scene sceneID="UCh-QZ-q4N">
@@ -194,6 +183,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qT2-UF-rlR">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -205,4 +197,10 @@
             <point key="canvasLocation" x="-465" y="277"/>
         </scene>
     </scenes>
+    <color key="tintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+    <resources>
+        <image name="3D" width="285" height="315"/>
+        <image name="Contact" width="1080" height="1080"/>
+        <image name="katalog" width="253" height="223"/>
+    </resources>
 </document>

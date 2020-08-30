@@ -28,8 +28,7 @@ class ViewController2: UIViewController, WKNavigationDelegate, WKUIDelegate {
        let myRequest = URLRequest(url: myURL!)
        webView.load(myRequest)
         self.title = "3D Configurator"
-        
-        let backBarButtonItem = UIBarButtonItem(title: "Main Page", style: .plain, target: nil, action: nil)
+        let backBarButtonItem = UIBarButtonItem(title: "Showers & Eyebaths", style: .plain, target: nil, action: nil)
         navigationItem.backBarButtonItem = backBarButtonItem
         
     }

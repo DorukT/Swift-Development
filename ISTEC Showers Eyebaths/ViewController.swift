@@ -16,28 +16,39 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "ISTEC Showers & Eyebaths"
         
-         let value = UIInterfaceOrientation.portrait.rawValue
-                  UIDevice.current.setValue(value, forKey: "orientation")
-                  
-    }
-
-    
-    @IBAction func configuratorAction(_ sender: Any) {
+        let tap1 = UITapGestureRecognizer(target: self, action: #selector(imageTapped1(tapGestureRecognizer:)))
+               configuratorImage.isUserInteractionEnabled = true
+               configuratorImage.addGestureRecognizer(tap1)
         
-        performSegue(withIdentifier: "page1", sender: nil)
-    }
-    
-    @IBAction func catalogAction(_ sender: Any) {
+        let tap2 = UITapGestureRecognizer(target: self, action: #selector(imageTapped2(tapGestureRecognizer:)))
+        catalogImage.isUserInteractionEnabled = true
+        catalogImage.addGestureRecognizer(tap2)
         
-        performSegue(withIdentifier: "page2", sender: nil)
-    }
-
-    @IBAction func contactAction(_ sender: Any) {
+        let tap3 = UITapGestureRecognizer(target: self, action: #selector(imageTapped3(tapGestureRecognizer:)))
+        contactImage.isUserInteractionEnabled = true
+        contactImage.addGestureRecognizer(tap3)
         
-        performSegue(withIdentifier: "page3", sender: nil)
     }
     
+    @objc func imageTapped1(tapGestureRecognizer: UITapGestureRecognizer)
+    {
+        _ = tapGestureRecognizer.view as! UIImageView
+       performSegue(withIdentifier: "page1", sender: nil)
+    }
+    
+    @objc func imageTapped2(tapGestureRecognizer: UITapGestureRecognizer)
+    {
+        _ = tapGestureRecognizer.view as! UIImageView
+       performSegue(withIdentifier: "page2", sender: nil)
+    }
+    
+    @objc func imageTapped3(tapGestureRecognizer: UITapGestureRecognizer)
+       {
+           _ = tapGestureRecognizer.view as! UIImageView
+          performSegue(withIdentifier: "page3", sender: nil)
+       }
     
     
 }
