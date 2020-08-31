@@ -14,6 +14,14 @@ class ViewController: UIViewController {
     @IBOutlet weak var catalogImage: UIImageView!
     @IBOutlet weak var contactImage: UIImageView!
     
+    //Force landscape portrait
+    
+    override func viewWillAppear(_ animated: Bool) {
+    AppDelegate.AppUtility.lockOrientation(UIInterfaceOrientationMask.portrait, andRotateTo: UIInterfaceOrientation.portrait)
+        }
+    
+    //Webview settings
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "ISTEC Showers & Eyebaths"

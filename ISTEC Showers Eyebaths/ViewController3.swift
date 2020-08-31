@@ -18,6 +18,13 @@ class ViewController3: UIViewController, WKNavigationDelegate, WKUIDelegate {
     
         var webView: WKWebView!
         
+    //Rotate settings
+   override func viewWillAppear(_ animated: Bool) {
+         AppDelegate.AppUtility.lockOrientation(UIInterfaceOrientationMask.landscapeRight, andRotateTo: UIInterfaceOrientation.landscapeRight)
+             }
+    
+    
+    
         override func loadView() {
            let webConfiguration = WKWebViewConfiguration()
            webView = WKWebView(frame: .zero, configuration: webConfiguration)
