@@ -12,6 +12,9 @@ import WebKit
 class ViewController3: UIViewController, WKNavigationDelegate, WKUIDelegate {
 
     @IBOutlet weak var webview2: WKWebView!
+    @IBAction func refreshButton2(_ sender: Any) {
+        webView.reload()
+    }
     
         var webView: WKWebView!
         
@@ -31,6 +34,12 @@ class ViewController3: UIViewController, WKNavigationDelegate, WKUIDelegate {
             let backBarButtonItem = UIBarButtonItem(title: "Showers & Eyebaths", style: .plain, target: nil, action: nil)
                  navigationItem.backBarButtonItem = backBarButtonItem
            
+            
+            let refreshControl = UIRefreshControl()
+                         refreshControl.addTarget(self, action: #selector(refreshButton2(_:)), for: UIControl.Event.valueChanged)
+                         webView.scrollView.addSubview(refreshControl)
+                         webView.scrollView.bounces = true
+            
             //let value = UIInterfaceOrientation.landscapeRight.rawValue
             //UIDevice.current.setValue(value, forKey: "orientation")
             

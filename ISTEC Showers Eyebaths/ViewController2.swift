@@ -12,7 +12,9 @@ import WebKit
 class ViewController2: UIViewController, WKNavigationDelegate, WKUIDelegate {
     
     @IBOutlet weak var webview1: WKWebView!
-    
+    @IBAction func refreshButton1(_ sender: UIButton) {
+        webView.reload()
+    }
     var webView: WKWebView!
     
     override func loadView() {
@@ -31,7 +33,14 @@ class ViewController2: UIViewController, WKNavigationDelegate, WKUIDelegate {
         let backBarButtonItem = UIBarButtonItem(title: "Showers & Eyebaths", style: .plain, target: nil, action: nil)
         navigationItem.backBarButtonItem = backBarButtonItem
         
+       let refreshControl = UIRefreshControl()
+       refreshControl.addTarget(self, action: #selector(refreshButton1(_:)), for: UIControl.Event.valueChanged)
+       webView.scrollView.addSubview(refreshControl)
+       webView.scrollView.bounces = true
+
+        
     }
     
+
     
 }

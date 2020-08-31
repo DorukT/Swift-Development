@@ -12,7 +12,10 @@ import WebKit
 class ViewController4: UIViewController, WKNavigationDelegate, WKUIDelegate {
 
     @IBOutlet weak var webview3: WKWebView!
-      
+    @IBAction func refreshButton3(_ sender: Any) {
+        webView.reload()
+    }
+    
     var webView: WKWebView!
         
         override func loadView() {
@@ -30,6 +33,12 @@ class ViewController4: UIViewController, WKNavigationDelegate, WKUIDelegate {
             self.title = "Contact Us"
             let backBarButtonItem = UIBarButtonItem(title: "Showers & Eyebaths", style: .plain, target: nil, action: nil)
                  navigationItem.backBarButtonItem = backBarButtonItem
+            
+            let refreshControl = UIRefreshControl()
+              refreshControl.addTarget(self, action: #selector(refreshButton3(_:)), for: UIControl.Event.valueChanged)
+              webView.scrollView.addSubview(refreshControl)
+              webView.scrollView.bounces = true
+            
         }
         
 

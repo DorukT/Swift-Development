@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rcC-nm-76N">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,47 +12,47 @@
             <objects>
                 <viewController title="mainpage" id="BYZ-38-t0r" customClass="ViewController" customModule="ISTEC_Showers_Eyebaths" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="katalog" translatesAutoresizingMaskIntoConstraints="NO" id="tvi-Z1-w78">
-                                <rect key="frame" x="87" y="381" width="240" height="223"/>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="katalog" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tvi-Z1-w78">
+                                <rect key="frame" x="99" y="369" width="177" height="169"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" button="YES" image="YES"/>
                                 </accessibility>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="223" id="XEy-Qr-efy"/>
+                                    <constraint firstAttribute="height" constant="169" id="OdV-Ra-3Ng"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="3D" translatesAutoresizingMaskIntoConstraints="NO" id="AjY-IG-hxv">
-                                <rect key="frame" x="63" y="127" width="289" height="214"/>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3D" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AjY-IG-hxv">
+                                <rect key="frame" x="99" y="128" width="177" height="201"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" button="YES" image="YES"/>
                                     <bool key="isElement" value="NO"/>
                                 </accessibility>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="214" id="ujD-HJ-yhH"/>
-                                </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Contact" translatesAutoresizingMaskIntoConstraints="NO" id="GmM-2U-uv2">
-                                <rect key="frame" x="-12" y="612" width="426" height="230"/>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Contact" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GmM-2U-uv2">
+                                <rect key="frame" x="99" y="578" width="177" height="132"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" button="YES" image="YES"/>
                                 </accessibility>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="132" id="yls-qo-75b"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="GmM-2U-uv2" firstAttribute="top" secondItem="tvi-Z1-w78" secondAttribute="bottom" constant="8" id="1B8-Tg-o0f"/>
-                            <constraint firstItem="AjY-IG-hxv" firstAttribute="centerX" secondItem="tvi-Z1-w78" secondAttribute="centerX" id="1fI-mp-6Uj"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="GmM-2U-uv2" secondAttribute="bottom" constant="20" id="8Yw-XF-Zbk"/>
-                            <constraint firstItem="AjY-IG-hxv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="39" id="KEm-HV-L33"/>
-                            <constraint firstItem="AjY-IG-hxv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="63" id="Uuo-LL-iAB"/>
-                            <constraint firstItem="GmM-2U-uv2" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="V1z-7X-xe4"/>
-                            <constraint firstItem="tvi-Z1-w78" firstAttribute="top" secondItem="AjY-IG-hxv" secondAttribute="bottom" constant="40" id="bps-xM-7Kn"/>
-                            <constraint firstItem="tvi-Z1-w78" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="eFw-DR-cvd"/>
-                            <constraint firstItem="AjY-IG-hxv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="el7-xx-qwr"/>
-                            <constraint firstItem="GmM-2U-uv2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-32" id="o71-zA-IZu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="GmM-2U-uv2" secondAttribute="bottom" constant="68" id="15H-90-1iD"/>
+                            <constraint firstItem="AjY-IG-hxv" firstAttribute="leading" secondItem="tvi-Z1-w78" secondAttribute="leading" id="449-p1-LRq"/>
+                            <constraint firstItem="AjY-IG-hxv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="99" id="8M1-LD-YBu"/>
+                            <constraint firstItem="tvi-Z1-w78" firstAttribute="trailing" secondItem="GmM-2U-uv2" secondAttribute="trailing" id="Lhc-CF-BoS"/>
+                            <constraint firstItem="AjY-IG-hxv" firstAttribute="trailing" secondItem="tvi-Z1-w78" secondAttribute="trailing" id="QHA-0K-czZ"/>
+                            <constraint firstItem="tvi-Z1-w78" firstAttribute="leading" secondItem="GmM-2U-uv2" secondAttribute="leading" id="UNh-AX-aq0"/>
+                            <constraint firstItem="AjY-IG-hxv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VDp-Uu-jsn"/>
+                            <constraint firstItem="AjY-IG-hxv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="evU-7e-miQ"/>
+                            <constraint firstItem="GmM-2U-uv2" firstAttribute="top" secondItem="tvi-Z1-w78" secondAttribute="bottom" constant="40" id="hgO-z5-VjM"/>
+                            <constraint firstItem="tvi-Z1-w78" firstAttribute="top" secondItem="AjY-IG-hxv" secondAttribute="bottom" constant="40" id="zUR-Qe-k2d"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -68,18 +68,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="250.72463768115944" y="276.5625"/>
+            <point key="canvasLocation" x="248.80000000000001" y="274.13793103448279"/>
         </scene>
         <!--controller1-->
         <scene sceneID="UCh-QZ-q4N">
             <objects>
                 <viewController title="controller1" id="AOd-qj-DRf" customClass="ViewController2" customModule="ISTEC_Showers_Eyebaths" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6WY-qz-jZp">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a9e-kU-Ull">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="690"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -96,7 +96,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="5lv-ZK-wYE"/>
                     </view>
-                    <navigationItem key="navigationItem" id="bKM-ck-y1a"/>
+                    <navigationItem key="navigationItem" id="bKM-ck-y1a">
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="refresh" id="KUT-po-U9D">
+                            <connections>
+                                <action selector="refreshButton1:" destination="AOd-qj-DRf" id="CdX-LA-j0Y"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="webview1" destination="a9e-kU-Ull" id="sZW-Cd-acu"/>
                     </connections>
@@ -110,11 +116,11 @@
             <objects>
                 <viewController title="controller2" id="fFv-LD-2r7" customClass="ViewController3" customModule="ISTEC_Showers_Eyebaths" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Rqt-mI-wFl">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pnr-qI-rgf">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="690"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -131,7 +137,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7md-bv-6Hj"/>
                     </view>
-                    <navigationItem key="navigationItem" id="wND-Wb-HGO"/>
+                    <navigationItem key="navigationItem" id="wND-Wb-HGO">
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="refresh" id="4dt-iJ-8Vn">
+                            <connections>
+                                <action selector="refreshButton2:" destination="fFv-LD-2r7" id="S4N-Vn-C1f"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="webview2" destination="Pnr-qI-rgf" id="Ry3-Kp-LWi"/>
                     </connections>
@@ -145,11 +157,11 @@
             <objects>
                 <viewController title="controller3" id="dik-Uw-Zjw" customClass="ViewController4" customModule="ISTEC_Showers_Eyebaths" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HQU-TT-pOr">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WB3-15-XyM">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="690"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -166,7 +178,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="679-5M-OsF"/>
                     </view>
-                    <navigationItem key="navigationItem" id="6A5-Od-uAR"/>
+                    <navigationItem key="navigationItem" id="6A5-Od-uAR">
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="refresh" id="Jjy-6r-KMp">
+                            <connections>
+                                <action selector="refreshButton3:" destination="dik-Uw-Zjw" id="uah-ZL-4Hd"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="webview3" destination="WB3-15-XyM" id="ZTi-j8-l41"/>
                     </connections>
@@ -181,11 +199,8 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rcC-nm-76N" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="qT2-UF-rlR">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <textAttributes key="titleTextAttributes">
-                            <color key="textColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

@@ -15,16 +15,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="IST_Logo" translatesAutoresizingMaskIntoConstraints="NO" id="e4k-Nk-XoD">
-                                <rect key="frame" x="105" y="513" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ISTEC logo-Beyaz" translatesAutoresizingMaskIntoConstraints="NO" id="TFp-V0-iOt">
+                                <rect key="frame" x="92" y="252" width="230" height="82"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="82" id="G4f-RU-NHr"/>
+                                </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ISTEC_Logo" translatesAutoresizingMaskIntoConstraints="NO" id="TFp-V0-iOt">
-                                <rect key="frame" x="54" y="226" width="307" height="172"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IST_Logo" translatesAutoresizingMaskIntoConstraints="NO" id="e4k-Nk-XoD">
+                                <rect key="frame" x="165" y="476" width="112" height="213"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="213" id="awa-gr-dZl"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="TFp-V0-iOt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="208" id="bst-AH-Xpe"/>
+                            <constraint firstItem="TFp-V0-iOt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="92" id="cWD-Ya-GjZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="e4k-Nk-XoD" secondAttribute="bottom" constant="173" id="nf4-JG-rzm"/>
+                            <constraint firstItem="e4k-Nk-XoD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="165" id="tkh-VZ-a4F"/>
+                            <constraint firstItem="TFp-V0-iOt" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="ufp-Lk-2J8"/>
+                            <constraint firstItem="e4k-Nk-XoD" firstAttribute="top" secondItem="TFp-V0-iOt" secondAttribute="bottom" constant="142" id="x2A-jT-76n"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="e4k-Nk-XoD" secondAttribute="trailing" constant="137" id="zL6-og-0JE"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
@@ -34,7 +47,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="ISTEC_Logo" width="180" height="61"/>
+        <image name="ISTEC logo-Beyaz" width="360" height="122"/>
         <image name="IST_Logo" width="429.5" height="329.5"/>
     </resources>
 </document>
