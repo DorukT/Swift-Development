@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0A95764024FB8B2A005920DD"
-               BuildableName = "ISTEC Showers Eyebaths.app"
+               BuildableName = "Build Your Safety Shower.app"
                BlueprintName = "ISTEC Showers Eyebaths"
                ReferencedContainer = "container:ISTEC Showers Eyebaths.xcodeproj">
             </BuildableReference>
@@ -45,7 +45,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0A95764024FB8B2A005920DD"
-            BuildableName = "ISTEC Showers Eyebaths.app"
+            BuildableName = "Build Your Safety Shower.app"
             BlueprintName = "ISTEC Showers Eyebaths"
             ReferencedContainer = "container:ISTEC Showers Eyebaths.xcodeproj">
          </BuildableReference>
@@ -62,7 +62,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0A95764024FB8B2A005920DD"
-            BuildableName = "ISTEC Showers Eyebaths.app"
+            BuildableName = "Build Your Safety Shower.app"
             BlueprintName = "ISTEC Showers Eyebaths"
             ReferencedContainer = "container:ISTEC Showers Eyebaths.xcodeproj">
          </BuildableReference>

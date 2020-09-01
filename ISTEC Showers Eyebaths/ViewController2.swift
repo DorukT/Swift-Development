@@ -17,19 +17,21 @@ class ViewController2: UIViewController, WKNavigationDelegate, WKUIDelegate {
     }
     var webView: WKWebView!
     
+    //progress bar
+    @IBOutlet weak var progressBar: UIProgressView!
+   
+    
     //Rotate settings
     override func viewWillAppear(_ animated: Bool) {
     AppDelegate.AppUtility.lockOrientation(UIInterfaceOrientationMask.portrait, andRotateTo: UIInterfaceOrientation.portrait)
         }
-    
-    
-    
     
     override func loadView() {
        let webConfiguration = WKWebViewConfiguration()
        webView = WKWebView(frame: .zero, configuration: webConfiguration)
        webView.uiDelegate = self
        view = webView
+       
     }
     
     override func viewDidLoad() {
@@ -41,14 +43,17 @@ class ViewController2: UIViewController, WKNavigationDelegate, WKUIDelegate {
         let backBarButtonItem = UIBarButtonItem(title: "Showers & Eyebaths", style: .plain, target: nil, action: nil)
         navigationItem.backBarButtonItem = backBarButtonItem
         
+        //refresh button
        let refreshControl = UIRefreshControl()
        refreshControl.addTarget(self, action: #selector(refreshButton1(_:)), for: UIControl.Event.valueChanged)
        webView.scrollView.addSubview(refreshControl)
        webView.scrollView.bounces = true
 
+
         
     }
     
-
     
-}
+        
+ }
+

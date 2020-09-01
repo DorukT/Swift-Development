@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var catalogImage: UIImageView!
     @IBOutlet weak var contactImage: UIImageView!
     
+   
     //Force landscape portrait
     
     override func viewWillAppear(_ animated: Bool) {
@@ -27,8 +28,8 @@ class ViewController: UIViewController {
         self.title = "ISTEC Showers & Eyebaths"
         
         let tap1 = UITapGestureRecognizer(target: self, action: #selector(imageTapped1(tapGestureRecognizer:)))
-               configuratorImage.isUserInteractionEnabled = true
-               configuratorImage.addGestureRecognizer(tap1)
+        configuratorImage.isUserInteractionEnabled = true
+        configuratorImage.addGestureRecognizer(tap1)
         
         let tap2 = UITapGestureRecognizer(target: self, action: #selector(imageTapped2(tapGestureRecognizer:)))
         catalogImage.isUserInteractionEnabled = true
