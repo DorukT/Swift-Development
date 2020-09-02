@@ -10,7 +10,7 @@
         <!--mainpage-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="mainpage" id="BYZ-38-t0r" customClass="ViewController" customModule="ISTEC_Showers_Eyebaths" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="mainpage" id="BYZ-38-t0r" customClass="ViewController" customModule="Build_Your_Safety_Shower" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -73,7 +73,7 @@
         <!--controller1-->
         <scene sceneID="UCh-QZ-q4N">
             <objects>
-                <viewController title="controller1" id="AOd-qj-DRf" customClass="ViewController2" customModule="ISTEC_Showers_Eyebaths" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="controller1" id="AOd-qj-DRf" customClass="ViewController2" customModule="Build_Your_Safety_Shower" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6WY-qz-jZp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -86,10 +86,6 @@
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ldI-NA-Gqn">
-                                <rect key="frame" x="112" y="432" width="150" height="2"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </progressView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -108,7 +104,6 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="progressBar" destination="ldI-NA-Gqn" id="Wd4-dm-NSm"/>
                         <outlet property="webview1" destination="a9e-kU-Ull" id="sZW-Cd-acu"/>
                     </connections>
                 </viewController>
@@ -119,7 +114,7 @@
         <!--controller2-->
         <scene sceneID="1hb-01-Tbo">
             <objects>
-                <viewController title="controller2" id="fFv-LD-2r7" customClass="ViewController3" customModule="ISTEC_Showers_Eyebaths" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="controller2" id="fFv-LD-2r7" customClass="ViewController3" customModule="Build_Your_Safety_Shower" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Rqt-mI-wFl">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -160,7 +155,7 @@
         <!--controller3-->
         <scene sceneID="XyC-Fp-SXA">
             <objects>
-                <viewController title="controller3" id="dik-Uw-Zjw" customClass="ViewController4" customModule="ISTEC_Showers_Eyebaths" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="controller3" id="dik-Uw-Zjw" customClass="ViewController4" customModule="Build_Your_Safety_Shower" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HQU-TT-pOr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -38,7 +38,7 @@ class ViewController4: UIViewController, WKNavigationDelegate, WKUIDelegate {
            let myRequest = URLRequest(url: myURL!)
            webView.load(myRequest)
             self.title = "Contact Us"
-            let backBarButtonItem = UIBarButtonItem(title: "Showers & Eyebaths", style: .plain, target: nil, action: nil)
+            let backBarButtonItem = UIBarButtonItem(title: "Showers & Eyebaths", style: .plain, target: webview3, action: #selector(webview3.reload))
                  navigationItem.backBarButtonItem = backBarButtonItem
             
             let refreshControl = UIRefreshControl()

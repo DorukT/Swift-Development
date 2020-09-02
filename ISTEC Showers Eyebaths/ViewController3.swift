@@ -38,7 +38,7 @@ class ViewController3: UIViewController, WKNavigationDelegate, WKUIDelegate {
            let myRequest = URLRequest(url: myURL!)
            webView.load(myRequest)
             self.title = "Catalog"
-            let backBarButtonItem = UIBarButtonItem(title: "Showers & Eyebaths", style: .plain, target: nil, action: nil)
+            let backBarButtonItem = UIBarButtonItem(title: "Showers & Eyebaths", style: .plain, target: webview2, action: #selector(webview2.reload))
                  navigationItem.backBarButtonItem = backBarButtonItem
            
             

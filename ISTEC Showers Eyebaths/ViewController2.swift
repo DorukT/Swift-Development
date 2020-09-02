@@ -17,8 +17,7 @@ class ViewController2: UIViewController, WKNavigationDelegate, WKUIDelegate {
     }
     var webView: WKWebView!
     
-    //progress bar
-    @IBOutlet weak var progressBar: UIProgressView!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
    
     
     //Rotate settings
@@ -30,17 +29,19 @@ class ViewController2: UIViewController, WKNavigationDelegate, WKUIDelegate {
        let webConfiguration = WKWebViewConfiguration()
        webView = WKWebView(frame: .zero, configuration: webConfiguration)
        webView.uiDelegate = self
-       view = webView
-       
+        view = webView
     }
     
+
     override func viewDidLoad() {
        super.viewDidLoad()
        let myURL = URL(string:"https://www.ist.com.tr/3d/en/")
        let myRequest = URLRequest(url: myURL!)
        webView.load(myRequest)
-        self.title = "3D Configurator"
-        let backBarButtonItem = UIBarButtonItem(title: "Showers & Eyebaths", style: .plain, target: nil, action: nil)
+       self.title = "3D Configurator"
+        
+        //back button
+        let backBarButtonItem = UIBarButtonItem(title: "Showers & Eyebaths", style: .plain, target: webview1, action: #selector(webview1.reload))
         navigationItem.backBarButtonItem = backBarButtonItem
         
         //refresh button
@@ -48,12 +49,8 @@ class ViewController2: UIViewController, WKNavigationDelegate, WKUIDelegate {
        refreshControl.addTarget(self, action: #selector(refreshButton1(_:)), for: UIControl.Event.valueChanged)
        webView.scrollView.addSubview(refreshControl)
        webView.scrollView.bounces = true
-
-
-        
     }
-    
-    
+
         
  }
 
