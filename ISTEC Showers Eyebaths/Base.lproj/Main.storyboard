@@ -10,7 +10,7 @@
         <!--mainpage-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="mainpage" id="BYZ-38-t0r" customClass="ViewController" customModule="Build_Your_Safety_Shower" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="mainpage" id="BYZ-38-t0r" customClass="ViewController" customModule="Safety_Shower_Builder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -73,26 +73,50 @@
         <!--controller1-->
         <scene sceneID="UCh-QZ-q4N">
             <objects>
-                <viewController title="controller1" id="AOd-qj-DRf" customClass="ViewController2" customModule="Build_Your_Safety_Shower" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="controller1" id="AOd-qj-DRf" customClass="ViewController2" customModule="Safety_Shower_Builder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6WY-qz-jZp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a9e-kU-Ull">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="730"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JuB-WI-BtJ">
+                                <rect key="frame" x="0.0" y="818" width="414" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="QOP-Sz-1SX"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem title="Screenshot" image="camera.fill" catalog="system" width="197.5" id="mIL-rw-3FM">
+                                        <connections>
+                                            <action selector="screenShot:" destination="AOd-qj-DRf" id="N0b-88-95y"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Selection Wizard" image="timelapse" catalog="system" width="633.5" id="hRR-eq-3SD">
+                                        <connections>
+                                            <action selector="selectionWizard:" destination="AOd-qj-DRf" id="cpt-EF-NhM"/>
+                                            <segue destination="iLe-LS-lPB" kind="popoverPresentation" destinationCreationSelector="wizardSegue:" popoverAnchorBarButtonItem="hRR-eq-3SD" id="AhD-TZ-Ml8">
+                                                <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                            </segue>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="a9e-kU-Ull" firstAttribute="bottom" secondItem="5lv-ZK-wYE" secondAttribute="bottom" id="ELB-a0-5UK"/>
-                            <constraint firstItem="a9e-kU-Ull" firstAttribute="leading" secondItem="5lv-ZK-wYE" secondAttribute="leading" id="G3R-qs-WsL"/>
-                            <constraint firstItem="a9e-kU-Ull" firstAttribute="centerX" secondItem="6WY-qz-jZp" secondAttribute="centerX" id="Zii-8f-Blv"/>
-                            <constraint firstItem="a9e-kU-Ull" firstAttribute="top" secondItem="5lv-ZK-wYE" secondAttribute="top" id="guq-Ca-VV0"/>
+                            <constraint firstItem="a9e-kU-Ull" firstAttribute="leading" secondItem="JuB-WI-BtJ" secondAttribute="leading" id="2Nw-d0-TQz"/>
+                            <constraint firstItem="a9e-kU-Ull" firstAttribute="centerX" secondItem="6WY-qz-jZp" secondAttribute="centerX" id="Bfj-Fm-c6D"/>
+                            <constraint firstItem="JuB-WI-BtJ" firstAttribute="top" secondItem="a9e-kU-Ull" secondAttribute="bottom" id="ByW-9s-6EZ"/>
+                            <constraint firstItem="a9e-kU-Ull" firstAttribute="top" secondItem="5lv-ZK-wYE" secondAttribute="top" id="VkD-42-DMB"/>
+                            <constraint firstItem="a9e-kU-Ull" firstAttribute="trailing" secondItem="JuB-WI-BtJ" secondAttribute="trailing" id="XJG-qT-6ZA"/>
+                            <constraint firstItem="JuB-WI-BtJ" firstAttribute="bottom" secondItem="5lv-ZK-wYE" secondAttribute="bottom" id="o16-Ap-pEv"/>
+                            <constraint firstItem="a9e-kU-Ull" firstAttribute="leading" secondItem="5lv-ZK-wYE" secondAttribute="leading" id="xSM-qK-WIv"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="5lv-ZK-wYE"/>
                     </view>
@@ -105,6 +129,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="backBarButtonItem" destination="bKM-ck-y1a" id="Uef-bP-tet"/>
+                        <outlet property="toolbar" destination="JuB-WI-BtJ" id="2dr-1X-LDd"/>
                         <outlet property="webview1" destination="a9e-kU-Ull" id="sZW-Cd-acu"/>
                     </connections>
                 </viewController>
@@ -112,10 +137,40 @@
             </objects>
             <point key="canvasLocation" x="1031.8840579710145" y="-378.34821428571428"/>
         </scene>
+        <!--View Controller5-->
+        <scene sceneID="ru3-Ky-Xkg">
+            <objects>
+                <viewController id="iLe-LS-lPB" customClass="ViewController5" customModule="Safety_Shower_Builder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mFV-GB-f3G">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BlL-Ia-0Rq">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="wyb-cK-lzt"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="MvF-pX-T7r"/>
+                    <connections>
+                        <outlet property="webview5" destination="BlL-Ia-0Rq" id="R1N-Hh-suJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fZ6-Ei-e5V" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1997.1014492753625" y="-376.33928571428572"/>
+        </scene>
         <!--controller2-->
         <scene sceneID="1hb-01-Tbo">
             <objects>
-                <viewController title="controller2" id="fFv-LD-2r7" customClass="ViewController3" customModule="Build_Your_Safety_Shower" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="controller2" id="fFv-LD-2r7" customClass="ViewController3" customModule="Safety_Shower_Builder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Rqt-mI-wFl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -157,7 +212,7 @@
         <!--controller3-->
         <scene sceneID="XyC-Fp-SXA">
             <objects>
-                <viewController title="controller3" id="dik-Uw-Zjw" customClass="ViewController4" customModule="Build_Your_Safety_Shower" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="controller3" id="dik-Uw-Zjw" customClass="ViewController4" customModule="Safety_Shower_Builder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HQU-TT-pOr">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -219,6 +274,8 @@
     <resources>
         <image name="3D" width="285" height="315"/>
         <image name="Contact" width="1080" height="1080"/>
+        <image name="camera.fill" catalog="system" width="128" height="96"/>
         <image name="katalog" width="253" height="223"/>
+        <image name="timelapse" catalog="system" width="128" height="122"/>
     </resources>
 </document>

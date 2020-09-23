@@ -9,6 +9,7 @@
 
 import UIKit
 import WebKit
+import Photos
 
 class ViewController2: UIViewController, WKNavigationDelegate, WKUIDelegate {
     
@@ -17,7 +18,7 @@ class ViewController2: UIViewController, WKNavigationDelegate, WKUIDelegate {
         webView.reload()
     }
     @IBOutlet weak var backBarButtonItem: UINavigationItem!
-    
+    @IBOutlet weak var toolbar: UIToolbar!
     
     var webView: WKWebView!
     
@@ -40,6 +41,7 @@ class ViewController2: UIViewController, WKNavigationDelegate, WKUIDelegate {
        let myRequest = URLRequest(url: myURL!)
        webView.load(myRequest)
        self.title = "3D Builder"
+       
         
         //back button
         let backBarButtonItem = UIBarButtonItem(title: "Homepage", style: .plain, target: webview1, action: #selector(webview1.reload))
@@ -50,8 +52,29 @@ class ViewController2: UIViewController, WKNavigationDelegate, WKUIDelegate {
        refreshControl.addTarget(self, action: #selector(refreshButton1(_:)), for: UIControl.Event.valueChanged)
        webView.scrollView.addSubview(refreshControl)
        webView.scrollView.bounces = true
+        
     }
 
-        
- }
+    
+    
+    
+      //screenshot settings
+    @IBAction func screenShot(_ sender: Any) {
+    
+        UIGraphicsBeginImageContextWithOptions(view.bounds.size, false, UIScreen.main.scale)
+    view.layer.render(in: UIGraphicsGetCurrentContext()!)
+    let image = UIGraphicsGetImageFromCurrentImageContext()
+    UIGraphicsEndImageContext()
 
+    UIImageWriteToSavedPhotosAlbum(image!, nil, nil, nil)
+        
+    }
+    
+    //selection wizard settings
+    @IBAction func selectionWizard(_ sender: Any) {
+        performSegue(withIdentifier: "ViewController5", sender: nil)
+    }
+ 
+
+    
+ }
