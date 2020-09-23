@@ -1,8 +1,9 @@
 //
 //  AppDelegate.swift
 //  ISTEC Showers Eyebaths
+//  Safety Shower Builder
 //
-//  Created by Doruk Türkuçar on 30.08.2020.
+//  Created by Doruk Türkuçar on 20.09.2020.
 //  Copyright © 2020 IST Safety Ltd. All rights reserved.
 //
 
@@ -36,9 +37,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
-
- 
-    
     
     //Force landscape or portrait
     var orientationLock = UIInterfaceOrientationMask.all
@@ -94,6 +92,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
       didFailToRegisterForRemoteNotificationsWithError error: Error) {
       print("Failed to register: \(error)")
     }
+    
     //Ask permission
  
 }

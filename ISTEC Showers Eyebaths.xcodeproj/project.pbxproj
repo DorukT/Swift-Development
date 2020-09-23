@@ -19,7 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0A95764124FB8B2A005920DD /* Build Your Safety Shower.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Build Your Safety Shower.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A95764124FB8B2A005920DD /* Safety Shower Builder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Safety Shower Builder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A95764424FB8B2A005920DD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0A95764624FB8B2A005920DD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0A95764824FB8B2A005920DD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,7 +54,7 @@
 		0A95764224FB8B2A005920DD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0A95764124FB8B2A005920DD /* Build Your Safety Shower.app */,
+				0A95764124FB8B2A005920DD /* Safety Shower Builder.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -93,7 +93,7 @@
 			);
 			name = "ISTEC Showers Eyebaths";
 			productName = "ISTEC Showers Eyebaths";
-			productReference = 0A95764124FB8B2A005920DD /* Build Your Safety Shower.app */;
+			productReference = 0A95764124FB8B2A005920DD /* Safety Shower Builder.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -308,9 +308,9 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Bundle-Identifier.ISTEC-Showers-Eyebaths";
-				PRODUCT_NAME = "Build Your Safety Shower";
+				PRODUCT_NAME = "Safety Shower Builder";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -327,9 +327,9 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Bundle-Identifier.ISTEC-Showers-Eyebaths";
-				PRODUCT_NAME = "Build Your Safety Shower";
+				PRODUCT_NAME = "Safety Shower Builder";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

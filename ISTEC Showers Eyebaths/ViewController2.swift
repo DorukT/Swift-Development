@@ -1,8 +1,9 @@
 //
 //  ViewController2.swift
 //  ISTEC Showers Eyebaths
+//  Safety Shower Builder
 //
-//  Created by Doruk Türkuçar on 30.08.2020.
+//  Created by Doruk Türkuçar on 20.09.2020.
 //  Copyright © 2020 IST Safety Ltd. All rights reserved.
 //
 
@@ -15,16 +16,17 @@ class ViewController2: UIViewController, WKNavigationDelegate, WKUIDelegate {
     @IBAction func refreshButton1(_ sender: UIButton) {
         webView.reload()
     }
-    var webView: WKWebView!
+    @IBOutlet weak var backBarButtonItem: UINavigationItem!
     
-    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
-   
+    
+    var webView: WKWebView!
     
     //Rotate settings
     override func viewWillAppear(_ animated: Bool) {
     AppDelegate.AppUtility.lockOrientation(UIInterfaceOrientationMask.portrait, andRotateTo: UIInterfaceOrientation.portrait)
         }
     
+    //Webview
     override func loadView() {
        let webConfiguration = WKWebViewConfiguration()
        webView = WKWebView(frame: .zero, configuration: webConfiguration)
@@ -32,16 +34,15 @@ class ViewController2: UIViewController, WKNavigationDelegate, WKUIDelegate {
         view = webView
     }
     
-
     override func viewDidLoad() {
        super.viewDidLoad()
        let myURL = URL(string:"https://www.ist.com.tr/3d/en/")
        let myRequest = URLRequest(url: myURL!)
        webView.load(myRequest)
-       self.title = "3D Configurator"
+       self.title = "3D Builder"
         
         //back button
-        let backBarButtonItem = UIBarButtonItem(title: "Showers & Eyebaths", style: .plain, target: webview1, action: #selector(webview1.reload))
+        let backBarButtonItem = UIBarButtonItem(title: "Homepage", style: .plain, target: webview1, action: #selector(webview1.reload))
         navigationItem.backBarButtonItem = backBarButtonItem
         
         //refresh button

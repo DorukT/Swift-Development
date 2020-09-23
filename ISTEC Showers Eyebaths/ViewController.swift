@@ -1,8 +1,9 @@
 //
 //  ViewController.swift
 //  ISTEC Showers Eyebaths
+//  Safety Shower Builder
 //
-//  Created by Doruk Türkuçar on 30.08.2020.
+//  Created by Doruk Türkuçar on 20.09.2020.
 //  Copyright © 2020 IST Safety Ltd. All rights reserved.
 //
 
@@ -14,7 +15,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var catalogImage: UIImageView!
     @IBOutlet weak var contactImage: UIImageView!
     
-   
     //Force landscape portrait
     
     override func viewWillAppear(_ animated: Bool) {
@@ -25,7 +25,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "ISTEC Showers & Eyebaths"
+        self.title = "Safety Shower Builder"
         
         let tap1 = UITapGestureRecognizer(target: self, action: #selector(imageTapped1(tapGestureRecognizer:)))
         configuratorImage.isUserInteractionEnabled = true
@@ -58,8 +58,6 @@ class ViewController: UIViewController {
            _ = tapGestureRecognizer.view as! UIImageView
           performSegue(withIdentifier: "page3", sender: nil)
        }
-    
-   
     
 }
 
