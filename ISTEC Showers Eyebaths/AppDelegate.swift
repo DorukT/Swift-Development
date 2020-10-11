@@ -14,10 +14,7 @@ import UserNotifications
 class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-        //delay splash screen
-        RunLoop.current.run(until: NSDate(timeIntervalSinceNow:2) as Date)
-        //finished delaying
+
         //ask permission
         registerForPushNotifications()
         //ask permission

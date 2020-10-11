@@ -40,8 +40,9 @@ class ViewController4: UIViewController, WKNavigationDelegate, WKUIDelegate {
            webView.load(myRequest)
             self.title = "Contact Us"
             
-            let backBarButtonItem = UIBarButtonItem(title: "3D Builder", style: .plain, target: webview3, action: #selector(webview3.reload))
-                 navigationItem.backBarButtonItem = backBarButtonItem
+            //back button
+            let leftBarButtonItem = UIBarButtonItem(title: "3D Builder", style: .plain, target: self, action: #selector(Back))
+                 navigationItem.leftBarButtonItem = leftBarButtonItem
             
             let refreshControl = UIRefreshControl()
               refreshControl.addTarget(self, action: #selector(refreshButton3(_:)), for: UIControl.Event.valueChanged)
@@ -49,5 +50,10 @@ class ViewController4: UIViewController, WKNavigationDelegate, WKUIDelegate {
               webView.scrollView.bounces = true
             
         }
+    
+    //back button func
+             @objc func Back() {
+                 self.navigationController!.popViewController(animated: true)
+             }
         
     }

@@ -21,10 +21,13 @@ class ViewController2: UIViewController, WKNavigationDelegate, WKUIDelegate {
     @IBOutlet weak var toolbar: UIToolbar!
     
     var webView: WKWebView!
-    
+
     //Rotate settings
     override func viewWillAppear(_ animated: Bool) {
     AppDelegate.AppUtility.lockOrientation(UIInterfaceOrientationMask.portrait, andRotateTo: UIInterfaceOrientation.portrait)
+        
+        self.navigationController?.isToolbarHidden = false
+        
         }
     
     //Webview
@@ -44,8 +47,8 @@ class ViewController2: UIViewController, WKNavigationDelegate, WKUIDelegate {
        
         
         //back button
-        let backBarButtonItem = UIBarButtonItem(title: "Homepage", style: .plain, target: webview1, action: #selector(webview1.reload))
-        navigationItem.backBarButtonItem = backBarButtonItem
+        let leftBarButtonItem = UIBarButtonItem(title: "Home Page", style: .plain, target: self, action: #selector(Back))
+        navigationItem.leftBarButtonItem = leftBarButtonItem
         
         //refresh button
        let refreshControl = UIRefreshControl()
@@ -54,27 +57,29 @@ class ViewController2: UIViewController, WKNavigationDelegate, WKUIDelegate {
        webView.scrollView.bounces = true
         
     }
-
     
-    
+    //back button func
+    @objc func Back() {
+        self.navigationController!.popViewController(animated: true)
+        
+    }
     
       //screenshot settings
     @IBAction func screenShot(_ sender: Any) {
     
-        UIGraphicsBeginImageContextWithOptions(view.bounds.size, false, UIScreen.main.scale)
+    UIGraphicsBeginImageContextWithOptions(view.bounds.size, false, UIScreen.main.scale)
     view.layer.render(in: UIGraphicsGetCurrentContext()!)
     let image = UIGraphicsGetImageFromCurrentImageContext()
     UIGraphicsEndImageContext()
-
     UIImageWriteToSavedPhotosAlbum(image!, nil, nil, nil)
         
     }
     
     //selection wizard settings
-    @IBAction func selectionWizard(_ sender: Any) {
-        performSegue(withIdentifier: "ViewController5", sender: nil)
+    @IBAction func wizardButton(_ sender: Any) {
+        performSegue(withIdentifier: "page4", sender: nil)
     }
- 
+    
 
     
  }

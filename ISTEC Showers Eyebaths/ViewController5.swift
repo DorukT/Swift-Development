@@ -12,7 +12,7 @@ import WebKit
 
 class ViewController5: UIViewController, WKNavigationDelegate, WKUIDelegate {
 
-    @IBOutlet weak var webview5: WKWebView!
+@IBOutlet weak var webview5: WKWebView!
     
    var webView: WKWebView!
         

@@ -39,8 +39,11 @@ class ViewController3: UIViewController, WKNavigationDelegate, WKUIDelegate {
            let myRequest = URLRequest(url: myURL!)
            webView.load(myRequest)
             self.title = "Safety Shower & Eyebath Catalog"
-            let backBarButtonItem = UIBarButtonItem(title: "3D Builder", style: .plain, target: webview2, action: #selector(webview2.reload))
-                 navigationItem.backBarButtonItem = backBarButtonItem
+            
+            
+            //back button
+            let leftBarButtonItem = UIBarButtonItem(title: "3D Builder", style: .plain, target: self, action: #selector(Back))
+                 navigationItem.leftBarButtonItem = leftBarButtonItem
            
             
             let refreshControl = UIRefreshControl()
@@ -53,7 +56,12 @@ class ViewController3: UIViewController, WKNavigationDelegate, WKUIDelegate {
             
             
         }
-        
+    
+        //back button func
+          @objc func Back() {
+              self.navigationController!.popViewController(animated: true)
+              
+          }
  
     
     }

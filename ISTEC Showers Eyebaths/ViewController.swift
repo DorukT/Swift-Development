@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     AppDelegate.AppUtility.lockOrientation(UIInterfaceOrientationMask.portrait, andRotateTo: UIInterfaceOrientation.portrait)
         }
     
-    //Webview settings
+    //Segue settings
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,6 +39,13 @@ class ViewController: UIViewController {
         contactImage.isUserInteractionEnabled = true
         contactImage.addGestureRecognizer(tap3)
         
+        tap1.numberOfTapsRequired = 1
+        tap1.numberOfTouchesRequired = 1
+        tap1.requiresExclusiveTouchType = true
+        tap2.requiresExclusiveTouchType = true
+        tap3.requiresExclusiveTouchType = true
+        
+        configuratorImage.isMultipleTouchEnabled = false
     }
     
     @objc func imageTapped1(tapGestureRecognizer: UITapGestureRecognizer)

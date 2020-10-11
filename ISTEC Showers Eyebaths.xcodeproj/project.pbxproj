@@ -72,8 +72,8 @@
 				0A9BA47F24FBDDFF005BBA43 /* ViewController4.swift */,
 				0AAA4A33251B7B09001D7E7F /* ViewController5.swift */,
 				0A95764A24FB8B2A005920DD /* Main.storyboard */,
-				0A95764D24FB8B2F005920DD /* Assets.xcassets */,
 				0A95764F24FB8B2F005920DD /* LaunchScreen.storyboard */,
+				0A95764D24FB8B2F005920DD /* Assets.xcassets */,
 				0A95765224FB8B2F005920DD /* Info.plist */,
 			);
 			path = "ISTEC Showers Eyebaths";
